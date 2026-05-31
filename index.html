@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Planner + Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Study Planner + Pomodoro</h1>
+    <p class="subtitle">Plan your tasks and focus using 25/5 method.</p>
+
+    <!-- TASK PLANNER -->
+    <div class="card">
+      <h2>✅ Study Tasks</h2>
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter a study task..." />
+        <button id="addTaskBtn">Add</button>
+      </div>
+
+      <ul id="taskList"></ul>
+      <button id="clearTasksBtn" class="danger">Clear All Tasks</button>
+    </div>
+
+    <!-- POMODORO TIMER -->
+    <div class="card">
+      <h2>⏳ Pomodoro Timer</h2>
+      <div class="timer">
+        <h3 id="timerDisplay">25:00</h3>
+        <p id="modeText">Mode: Focus</p>
+      </div>
+
+      <div class="timer-buttons">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn" class="danger">Reset</button>
+      </div>
+
+      <div class="modes">
+        <button id="focusModeBtn" class="mode active">Focus (25)</button>
+        <button id="breakModeBtn" class="mode">Break (5)</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made by You 💪 | Keep learning every day!</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
